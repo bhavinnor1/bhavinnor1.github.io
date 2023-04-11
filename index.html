@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+	<div class="ncontainer full-bleed">
+		<div id="nav" class="n-div">
+			<!-- <div style="display: block;"> -->
+			<!-- <div class="navbar"> -->
+			<div class="nav-ham">
+				<div class="logo">
+					Selecao
+				</div>
+				<div>
+					<button class="hb" onclick="haambagu()">&#8801;</button>
+				</div>
+			</div>
+			<!-- </div> -->
+			<!-- </div> -->
+			<!-- <div style="display: block;"></div> -->
+			<div id="dd" class="navlinks">
+				<ul>
+					<li class="nav-li">Home</li>
+					<li class="nav-li">About</li>
+					<li class="nav-li">Services</li>
+					<li class="nav-li">Portfolio</li>
+					<li class="nav-li">Pricing</li>
+					<li class="nav-li">Team</li>
+					<li class="nav-li">Dropdown</li>
+					<li class="nav-li">Contact</li>
+				</ul>
+			</div>
+			<!-- </div> -->
+
+		</div>
+	</div>
+
+	<div class="color">
+		<div class="container-special">
+			<div class="grid-container-slide">
+				<div class="grid-item">
+					<button onclick="arrow()" class="arrows">&#x25C0;</button>
+				</div>
+				<div class="grid-item"><br><br>
+					<div class="welcome">
+						
+						<div id="header" class="wtc">
+							Welcome To Selecao</div>
+						<div id="para" class="wtcinfo">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+							Explicabo illo
+							deserunt
+							laborum sint
+							molestiae nulla dolore voluptatem magni est officia at voluptatum veritatis ex, blanditiis
+							itaque
+							eligendi nesciunt voluptatibus asperiores? Beatae quae officiis corporis voluptatum.
+						</div>
+						<div id="button" class="readmore">
+							<a href="#">Read more</a><br><br><br><br>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item">
+					<button onclick="arrow2()" class="arrows">&#x25B6;</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="wtransform">
+		<div class="circle"></div>
+		<div class="circle2"></div>
+		<div class="circle3"></div>
+		<div class="circle4"></div>
+		<div class="circle5"></div>
+		<div class="circle6"></div>
+		<div class="circle7"></div>
+		<div class="circle8"></div>
+		<div class="circle9"></div>
+	</div> -->
+	<div class="container">
+		<div class="about">
+			<div>
+				<div class="a">ABOUT</div>
+				<div class="title">WHO WE ARE</div>
+			</div>
+			<div></div>
+			<div class="info">
+				<div class="ichild">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua.
+				</div>
+				<br>
+				<div class="ichild"><img style="width: 1em;" src="dtick.svg" alt=""> Ullamco laboris nisi ut aliquip ex
+					ea commodo consequat </div>
+				<div class="ichild"><img style="width: 1em;" src="dtick.svg" alt=""> Ullamco laboris nisi ut aliquip ex
+					ea commodo consequat </div>
+				<div class="ichild"><img style="width: 1em;" src="dtick.svg" alt=""> Ullamco laboris nisi ut aliquip ex
+					ea commodo consequat </div>
+			</div>
+
+			<div class="info">
+				<div class="ichild">
+					Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+					voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+				<br>
+				<div><button class="learn">Learn more</button></div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="buttons">
+			<button id="blogger" onclick="blogger()" class="b"
+				style="background-color: coral; box-sizing: border-box; height: 100px; width:auto;">
+				<svg id="bli" fill="white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24"
+					style="enable-background:new 0 0 24 24;width:100%; height: 100%; padding: 3%;box-sizing: border-box;"
+					xml:space="preserve" width="512" height="512">
+					<g id="W_Mark_2_">
+						<path
+							d="M12,0.72c1.523,0,3,0.298,4.39,0.886c2.671,1.13,4.874,3.333,6.003,6.003C22.982,9,23.28,10.477,23.28,12   s-0.298,3-0.886,4.39c-1.116,2.639-3.35,4.881-6.003,6.003C15,22.982,13.523,23.28,12,23.28c-1.523,0-3-0.298-4.39-0.886   c-2.638-1.116-4.881-3.351-6.003-6.003C1.018,15,0.72,13.523,0.72,12c0-1.523,0.298-3,0.886-4.39   C2.736,4.939,4.94,2.735,7.61,1.606C9,1.018,10.477,0.72,12,0.72 M12,0C5.373,0,0,5.373,0,12c0,6.627,5.373,12,12,12   s12-5.373,12-12C24,5.373,18.627,0,12,0L12,0z" />
+						<path
+							d="M2,12c0,3.958,2.3,7.379,5.636,9L2.866,7.93C2.311,9.174,2,10.55,2,12z M18.751,11.495c0-1.236-0.444-2.092-0.824-2.758   c-0.507-0.824-0.982-1.521-0.982-2.345c0-0.919,0.697-1.775,1.679-1.775c0.044,0,0.086,0.005,0.129,0.008   C16.974,2.995,14.603,2,12,2C8.506,2,5.433,3.793,3.645,6.507C3.88,6.515,4.101,6.519,4.288,6.519c1.046,0,2.665-0.127,2.665-0.127   c0.539-0.032,0.602,0.76,0.064,0.824c0,0-0.542,0.063-1.144,0.095l3.641,10.832l2.189-6.563l-1.558-4.269   C9.607,7.28,9.096,7.216,9.096,7.216C8.557,7.184,8.621,6.361,9.16,6.392c0,0,1.651,0.127,2.634,0.127   c1.046,0,2.666-0.127,2.666-0.127c0.539-0.032,0.602,0.76,0.064,0.824c0,0-0.542,0.063-1.144,0.095l3.614,10.749l1.032-3.269   C18.482,13.363,18.751,12.351,18.751,11.495z M12.176,12.874l-3.001,8.718C10.071,21.856,11.018,22,12,22   c1.164,0,2.282-0.201,3.321-0.567c-0.027-0.043-0.051-0.088-0.072-0.138L12.176,12.874z M20.775,7.202   c0.043,0.318,0.067,0.66,0.067,1.028c0,1.014-0.19,2.155-0.761,3.582l-3.054,8.831C20.001,18.91,22,15.689,22,12   C22,10.261,21.556,8.627,20.775,7.202z" />
+					</g>
+				</svg>
+			</button>
+			<button id="wordpress" onclick="wordpress()" class="b"
+				style="box-sizing: border-box; height: 100px; width:auto;">
+				<svg class="s" id="woi" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24"
+					style="enable-background:new 0 0 24 24;width:100%; height: 100%; padding: 3%;box-sizing: border-box;"
+					xml:space="preserve" width="512" height="512">
+					<g>
+						<path
+							d="M23.11,4.433H0.89C0.398,4.433,0,4.832,0,5.324v13.353c0,0.492,0.398,0.891,0.89,0.891h22.22   c0.492,0,0.89-0.399,0.89-0.891V5.324C24,4.832,23.602,4.433,23.11,4.433z M4.708,15.187l-1.313-5.085   c-0.081-0.314-0.15-0.428-0.392-0.561C2.606,9.327,1.953,9.126,1.376,9l0.04-0.185h2.804c0.357,0,0.679,0.238,0.76,0.65   l0.694,3.688L7.39,8.815h1.732l-2.67,6.372H4.708z M8.465,15.187l1.364-6.372h1.649l-1.364,6.372H8.465z M13.079,15.288   c-0.737-0.009-1.449-0.162-1.834-0.339l0.298-1.397c0.384,0.179,0.865,0.416,1.694,0.403c0.474-0.008,0.982-0.195,0.986-0.623   c0.002-0.28-0.212-0.48-0.855-0.792c-0.625-0.305-1.454-0.817-1.443-1.734c0.01-1.24,1.157-2.106,2.786-2.106   c0.634,0,1.145,0.138,1.542,0.282l-0.289,1.351c-0.738-0.339-1.389-0.316-1.626-0.284c-0.476,0.061-0.694,0.304-0.699,0.534   c-0.017,0.752,2.317,0.844,2.309,2.525C15.944,14.431,14.811,15.288,13.079,15.288z M20.252,15.187l-0.199-0.952h-2.115   l-0.343,0.952h-1.73l2.472-5.905C18.455,9,18.721,8.815,19.038,8.815h1.407l1.331,6.372H20.252z M18.412,12.929h1.367l-0.499-2.393   L18.412,12.929z" />
+					</g>
+				</svg>
+
+			</button>
+			<button id="wix" onclick="wix()" class="b" style="box-sizing: border-box; height: 100px; width:auto;">
+				<svg class="s" id="wii" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24"
+					style="enable-background:new 0 0 24 24;width:100%; height: 100%; padding: 3%;box-sizing: border-box;"
+					xml:space="preserve" width="512" height="512">
+					<g id="XMLID_1_">
+						<g id="XMLID_2_">
+							<g id="XMLID_3_">
+								<path id="XMLID_8_"
+									d="M13.731,7.508c-0.476,0.249-0.653,0.67-0.653,1.832c0,0,0.241-0.233,0.598-0.362     c0.26-0.094,0.483-0.238,0.611-0.332c0.402-0.294,0.464-0.674,0.464-1.312C14.752,7.335,14.096,7.317,13.731,7.508z" />
+								<path id="XMLID_7_"
+									d="M10.91,7.781c-0.388,0.342-0.501,0.887-0.501,0.887l-1.284,4.975L8.057,9.571     c-0.104-0.433-0.292-0.968-0.588-1.33c-0.378-0.461-1.146-0.49-1.228-0.49c-0.082,0-0.85,0.029-1.228,0.49     c-0.297,0.362-0.484,0.897-0.588,1.33l-1.068,4.072L2.073,8.668c0,0-0.113-0.545-0.501-0.887C0.943,7.226,0,7.345,0,7.345     l2.459,9.297c0,0,0.811,0.058,1.217-0.149c0.533-0.272,0.787-0.481,1.11-1.746c0.288-1.128,1.092-4.44,1.167-4.676     C5.99,9.954,6.037,9.676,6.241,9.676c0.209,0,0.252,0.278,0.289,0.395c0.074,0.236,0.879,3.548,1.167,4.676     c0.323,1.265,0.576,1.475,1.11,1.746c0.406,0.207,1.217,0.149,1.217,0.149l2.459-9.297C12.482,7.345,11.539,7.226,10.91,7.781z" />
+								<path id="XMLID_6_"
+									d="M14.751,8.863c0,0-0.154,0.238-0.505,0.434c-0.225,0.126-0.442,0.211-0.674,0.323     c-0.389,0.187-0.494,0.394-0.494,0.711v6.311c0,0,0.62,0.078,1.026-0.128c0.522-0.266,0.642-0.523,0.647-1.679L14.751,8.863z" />
+								<path id="XMLID_5_"
+									d="M20.88,12.016L24,7.376c0,0-1.317-0.224-1.969,0.369c-0.417,0.38-0.884,1.063-0.884,1.063L20,10.463     c-0.056,0.086-0.129,0.18-0.245,0.18s-0.189-0.094-0.245-0.18l-1.148-1.655c0,0-0.467-0.683-0.884-1.063     c-0.652-0.594-1.969-0.369-1.969-0.369l3.12,4.64l-3.112,4.626c0,0,1.371,0.173,2.023-0.42c0.417-0.38,0.821-0.997,0.821-0.997     l1.148-1.655c0.056-0.086,0.129-0.18,0.245-0.18s0.189,0.094,0.245,0.18l1.148,1.655c0,0,0.428,0.617,0.845,0.997     c0.652,0.593,1.999,0.42,1.999,0.42L20.88,12.016z" />
+							</g>
+						</g>
+					</g>
+				</svg>
+			</button>
+			<button id="cloudflare" onclick="cloudflare()" class="b"
+				style="box-sizing: border-box; height: 100px; width:auto;">
+				<svg class="s" id="cli" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" fill="green"
+					style="enable-background:new 0 0 24 24;width:100%; height: 100%; padding: 3%; box-sizing: border-box;"
+					xml:space="preserve" width="512" height="512">
+					<g>
+						<path
+							d="M18.492,11.082c0,0.038-0.006,0.075-0.02,0.111l-0.498,1.302c-0.393,1.026-1.515,1.866-2.551,1.914l-8.735,0.111   c-0.088,0.004-0.172,0.068-0.201,0.154c-0.018,0.055-0.011,0.112,0.019,0.156c0.03,0.043,0.078,0.069,0.136,0.073l8.655,0.11   c0.457,0.022,0.833,0.208,1.059,0.524c0.246,0.343,0.3,0.81,0.154,1.315l-0.123,0.425c-0.026,0.088-0.106,0.149-0.197,0.151   c-0.002,0-0.003,0-0.005,0L0.205,17.424c-0.084,0-0.154-0.062-0.167-0.146C0.014,17.107,0,16.931,0,16.753   c0-1.974,1.572-3.58,3.532-3.638c-0.072-0.283-0.097-0.583-0.066-0.895c0.12-1.2,1.084-2.166,2.284-2.286   c0.676-0.068,1.305,0.128,1.797,0.497c0.762-2.244,2.886-3.858,5.387-3.858c2.715,0,4.985,1.902,5.551,4.447   C18.49,11.04,18.492,11.061,18.492,11.082z" />
+						<path
+							d="M24,16.018c0,0.444-0.061,0.874-0.176,1.281c-0.021,0.076-0.091,0.127-0.17,0.127h-6.596c-0.002,0-0.004,0-0.005,0   c-0.069-0.003-0.116-0.073-0.091-0.139l0.139-0.362c0.393-1.026,1.515-1.866,2.556-1.914l1.917-0.111   c0.088-0.004,0.172-0.068,0.201-0.154c0.018-0.055,0.011-0.112-0.019-0.157c-0.03-0.042-0.077-0.068-0.132-0.071l-1.845-0.111   c-0.457-0.022-0.833-0.207-1.059-0.524c-0.246-0.343-0.3-0.81-0.154-1.315l0.34-1.176c0.013-0.044,0.046-0.077,0.087-0.092   c0.012-0.004,0.024-0.007,0.038-0.008c0.08-0.004,0.159-0.006,0.24-0.006C21.882,11.288,24,13.406,24,16.018z" />
+					</g>
+				</svg>
+			</button>
+			<!-- <button><img src="wordpress.svg" alt=""></button></button>
+		<button><img src="wix.svg" alt=""></button></button>
+		<button><img src="cloudflare.svg" alt=""></button></button> -->
+		</div>
+	</div>
+	<div class="container">
+		<div id="info-para" class="flex">
+			<div>
+				<div class="ichild">
+					<div id="b-title" style="font-weight: bold;font-size: xx-large;">Voluptatem dignissimos provident
+						quasi corporis
+						voluptates sit assumenda.</div>
+				</div>
+				<div style="margin-top: 1%;">
+					<div id="b-fpara" style="color: rgba(47, 79, 79, 0.662); font-size: larger;">Lorem ipsum dolor, sit
+						amet consectetur adipisicing elit quasi corporiss.</div>
+				</div>
+				<div class="ichild">
+					<div id="b-spara" style="color: rgba(47, 79, 79, 0.662); font-size: large;">
+						<img style="width: 1em;" src="dtick.svg" alt=""> Ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in <br>
+						<img style="width: 1em;" src="dtick.svg" alt=""> Voluptate velit esse cillum dolore eu fugiat
+						nulla
+						pariatur. Excepteur sint occaecat cupidatat non<br>
+						<img style="width: 1em;" src="dtick.svg" alt=""> Proident, sunt in culpa qui officia deserunt
+						mollit
+						anim id est laborum.<br>
+					</div>
+				</div>
+				<div class="ichild">
+					<div id="b-tpara" style="color: rgba(47, 79, 79, 0.662); font-size: larger;">Ullamco laboris nisi ut
+						aliquip ex
+						ea commodo consequat. Duis aute irure dolor in reprehenderit
+						in
+						voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+						non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+				</div>
+			</div>
+			<div>
+				<div class="grid-item5">
+					<img id="explain-image" src="https://bootstrapselecaobykj.netlify.app/Image/Features/features-1.png"
+						alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container full-bleed2" style="background-color: #302c3c;">
+		<div class="flex2">
+			<div>
+				<div style="color: aliceblue;" class="title">Call To Action</div>
+				<div style="color: aliceblue;font-size: 20px;">Duis aute irure dolor in reprehenderit in voluptate velit
+					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.</div>
+			</div>
+			<div><button id="cta" href="#">CALL TO ACTION</button></div>
+		</div>
+	</div>
+	<div class="container">
+		<div>
+			<div class="a">SERVICES</div>
+			<div class="title">WHAT DO WE OFFER</div>
+		</div>
+		<div class="grid-container">
+			<div class="grid-item2 extra">
+				<div class="flex3">
+					<div class="icon">
+						<img width="120px" src="icons/icons8-bonsai-96.png" alt="" srcset="">
+					</div>
+					<div style="height: 100px;">
+						<div class="mini-title">
+							Lorem Ipsum
+						</div>
+						<div class="cinfo">
+							Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+							cupiditate non provident
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-item2 extra">
+				<div class="flex3">
+					<div class="icon">
+						<img width="120px" src="icons/icons8-kawaii-sushi-96.png" alt="" srcset="">
+					</div>
+					<div style="height: 100px;">
+						<div class="mini-title">
+							Dolor Sitema
+						</div>
+						<div class="cinfo">
+							Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat
+							tarad limino ata
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-item2 extra">
+				<div class="flex3">
+					<div class="icon">
+						<img width="120px" src="icons/icons8-fuji-96.png" alt="" srcset="">
+					</div>
+					<div style="height: 100px;">
+						<div class="mini-title">
+							Sed ut perspiciatis
+						</div>
+						<div class="cinfo">
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+							pariatur
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-item2 extra">
+				<div class="flex3">
+					<div class="icon">
+						<img width="120px" src="icons/icons8-origami-96.png" alt="" srcset="">
+					</div>
+					<div style="height: 100px;">
+						<div class="mini-title">
+							Magni Dolores
+						</div>
+						<div class="cinfo">
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+							anim id
+							est laborum
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-item2 extra">
+				<div class="flex3">
+					<div class="icon">
+						<img width="120px" src="icons/icons8-silken-tofu-96.png" alt="" srcset="">
+					</div>
+					<div style="height: 120px;">
+						<div class="mini-title">
+							Nemo Enim
+						</div>
+						<div class="cinfo">
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+							voluptatum
+							deleniti atque
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-item2 extra">
+				<div class="flex3">
+					<div class="icon">
+						<img src="icons/icons8-bento-96.png" alt="" srcset="">
+					</div>
+					<div style="height: 120px;">
+						<div class="mini-title">
+							Eiusmod Tempor
+						</div>
+						<div class="cinfo">
+							Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
+							nobis est
+							eligendi
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="container">
+		<div>
+			<div class="a">PORTFOLIO</div>
+			<div class="title">WHAT WE'VE DONE</div>
+		</div>
+		<div class="grid-container">
+			<div class="grid-item3">
+				<div class="flex4">
+					<!-- <div class="grid-container3"> -->
+					<!--  -->
+					<!--  -->
+					<div class="img-container">
+						<img style="width:100%;" src="1.jpg" alt="">
+					</div>
+					<!-- </div> -->
+					<!-- <div class="grid-item"> -->
+					<div class="img-container">
+						<img style="width:100%;" src="6.jpg" alt="">
+					</div>
+					<!-- </div> -->
+				</div>
+			</div>
+			<div class="grid-item3">
+				<div class="flex4">
+					<div class="img-container">
+						<img style="width: 100%;" src="2.jpg" alt="">
+					</div>
+					<!-- <div class="grid-item"> -->
+					<div class="img-container">
+						<img style="width: 100%;" src="5.jpg" alt="">
+					</div>
+					<!-- </div> -->
+					<!-- <div class="grid-item"> -->
+					<div class="img-container">
+						<img style="width: 100%;"
+							src="https://bootstrapselecaobykj.netlify.app/Image/Portfolio/portfolio-7.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<!-- </div> -->
+			<!-- </div> -->
+			<!-- <div class="grid-item">
+				<div class="flex4">
+					<div style="width: auto; height: 150px">
+						<img src="https://bootstrapselecaobykj.netlify.app/Image/Portfolio/portfolio-2.jpg" alt="">
+					</div>
+					<div style="width: auto; height: 500px">
+						<img src="https://bootstrapselecaobykj.netlify.app/Image/Portfolio/portfolio-5.jpg" alt="">
+					</div>
+					<div style="width: auto; height: 150px">
+						<img src="https://bootstrapselecaobykj.netlify.app/Image/Portfolio/portfolio-9.jpg" alt="">
+					</div>
+				</div>
+			</div> -->
+			<div class="grid-item3">
+				<div class="flex4">
+					<div class="img-container">
+						<img style="width: 100%;"
+							src="https://bootstrapselecaobykj.netlify.app/Image/Portfolio/portfolio-3.jpg" alt="">
+					</div>
+					<div class="img-container">
+						<img style="width: 100%;"
+							src="https://bootstrapselecaobykj.netlify.app/Image/Portfolio/portfolio-4.jpg" alt="">
+					</div>
+					<div class="img-container">
+						<img style="width: 100%;"
+							src="https://bootstrapselecaobykj.netlify.app/Image/Portfolio/portfolio-7.jpg" alt="">
+					</div>
+					<div class="img-container">
+						<img style="width: 100%;"
+							src="https://bootstrapselecaobykj.netlify.app/Image/Portfolio/portfolio-8.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div>
+			<div class="a">TESTIMONIAL</div>
+			<div class="title">WHAT THEY ARE SAYING ABOUT US</div>
+		</div>
+		<div class="grid-container4">
+			<div class="test-people">
+				<div style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt,
+					error. Cum beatae ad excepturi sapiente quaerat. At quod neque, maxime tempore quis, error
+					dolor, dolorum porro nostrum minima necessitatibus numquam qui quaerat rerum voluptatibus.
+					Facilis.</div>
+				<div style="height: 100px; width: 100px; border-radius: 50%; overflow: hidden;"><img
+						style=" height:100%;" src="testimonials-1.jpg" alt=""></div>
+				<div style="font-size: xx-large;text-align: center;">Saul Goodman</div>
+				<div style="font-size: large;">CEO & Co-founder</div>
+			</div>
+			<div class="test-people">
+				<div style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt,
+					error. Cum beatae ad excepturi sapiente quaerat. At quod neque, maxime tempore quis, error
+					dolor, dolorum porro nostrum minima necessitatibus numquam qui quaerat rerum voluptatibus.
+					Facilis.</div>
+				<div style="height: 100px; width: 100px; border-radius: 50%; overflow: hidden;"><img
+						style="width: 100%;" src="testimonials-2.jpg" alt=""></div>
+				<div style="font-size: xx-large;text-align: center;">Sara Willson</div>
+				<div style="font-size: 
+					large;">Designer</div>
+			</div>
+			<div class="test-people">
+				<div style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt,
+					error. Cum beatae ad excepturi sapiente quaerat. At quod neque, maxime tempore quis, error
+					dolor, dolorum porro nostrum minima necessitatibus numquam qui quaerat rerum voluptatibus.
+					Facilis.</div>
+				<div style="height: 100px; width: 100px; border-radius: 50%; overflow: hidden;"><img
+						style="width: 100%;" src="testimonials-3.jpg" alt=""></div>
+				<div style="font-size: xx-large; text-align: center;">Jena Karlis</div>
+				<div style="font-size: large;">Store Owner</div>
+			</div>
+			<!-- <div class="test-people">
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, error. Cum beatae ad excepturi sapiente quaerat. At quod neque, maxime tempore quis, error dolor, dolorum porro nostrum minima necessitatibus numquam qui quaerat rerum voluptatibus. Facilis.</div>
+					<div style="height: 100px; border-radius: 50%; overflow: hidden;"><img style="width: 100%;" src="testimonials-4.jpg" alt=""></div>
+					<div>Matt Brandon</div>
+					<div>Freelancer</div>
+				</div>
+				<div class="test-people">
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, error. Cum beatae ad excepturi sapiente quaerat. At quod neque, maxime tempore quis, error dolor, dolorum porro nostrum minima necessitatibus numquam qui quaerat rerum voluptatibus. Facilis.</div>
+					<div style="height: 100px; border-radius: 50%; overflow: hidden;"><img style="width: 100%;" src="testimonials-5.jpg" alt=""></div>
+					<div>John Larson</div>
+					<div>Entrepreneur</div>
+				</div> -->
+		</div>
+	</div>
+
+	<div class="container">
+		<div>
+			<div class="a">PRICING</div>
+			<div class="title">OUR COMPETING PRICES</div>
+		</div>
+		<div class="fl">
+			<div class="price" style="text-align: center;   margin: 0px 10px;">
+				<div style="font-size: 50px; background-color: rgb(233, 233, 233);">
+					Free
+				</div>
+				<div style="font-size: xx-large;"><span style="color: coral;"><sup>$</sup>0</span>/month</div>
+				<div style="font-size: larger;">
+					Aida dere <br>
+					Nec feugiat nisl <br>
+					Nulla at volutpat dola <br>
+					<span style="text-decoration: line-through;">
+						Pharetra massa <br>
+						Massa ultricies mi
+					</span>
+				</div>
+				<div style="background-color: rgb(233, 233, 233);"><button
+						style="border-radius: 25px; background-color: coral;color: aliceblue; border: 0px; padding: 5px 15px; cursor:pointer; font-size: xx-large;">Buy
+						Now</button></div>
+			</div>
+			<div class="price"
+				style="box-sizing: border-box; text-align: center;   border: 1px solid salmon; margin: 0px 10px;">
+				<div style="font-size: 50px;  background-color: coral; color: white;">
+					Business
+				</div>
+				<div style="font-size: xx-large; background-color: white;"><span
+						style="color: coral;"><sup>$</sup>19</span>/month</div>
+				<div style="font-size: larger; background-color: white;">
+					Aida dere <br>
+					Nec feugiat nisl <br>
+					Nulla at volutpat dola <br>
+					<span style="text-decoration: line-through;">
+						Pharetra massa <br>
+						Massa ultricies mi
+					</span>
+				</div>
+				<div style="background-color: rgb(233, 233, 233);"><button
+						style="border-radius: 25px; background-color: coral;color: aliceblue; border: 0px; padding: 5px 15px; cursor:pointer; font-size: xx-large;">Buy
+						Now</button></div>
+			</div>
+			<div class="price" style="text-align: center; margin: 0px 10px; ">
+				<div style="font-size: 50px;  background-color: rgb(233, 233, 233);">
+					Developer
+				</div>
+				<div style="font-size: xx-large;"><span style="color: coral;"><sup>$</sup>29</span>/month</div>
+				<div style="font-size: larger;">
+					Aida dere <br>
+					Nec feugiat nisl <br>
+					Nulla at volutpat dola <br>
+					<span style="text-decoration: line-through;">
+						Pharetra massa <br>
+						Massa ultricies mi
+					</span>
+				</div>
+				<div style="background-color: rgb(233, 233, 233);"><button
+						style="border-radius: 25px; background-color: coral;color: aliceblue; border: 0px; padding: 5px 15px; cursor:pointer; font-size: xx-large;">Buy
+						Now</button></div>
+			</div>
+			<div class="price" style="text-align: center; margin: 0px 10px; ">
+				<div style="font-size: 50px; background-color: rgb(233, 233, 233);">
+					Ultimate
+				</div>
+				<div style="font-size: xx-large;"><span style="color: coral;"><sup>$</sup>49</span>/month</div>
+				<div style="font-size: larger;">
+					Aida dere <br>
+					Nec feugiat nisl <br>
+					Nulla at volutpat dola <br>
+					<span style="text-decoration: line-through;">
+						Pharetra massa <br>
+						Massa ultricies mi
+					</span>
+				</div>
+				<div style="background-color: rgb(233, 233, 233);"><button
+						style="border-radius: 25px; background-color: coral;color: aliceblue; border: 0px; padding: 5px 15px; cursor:pointer; font-size: xx-large;">Buy
+						Now</button></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div>
+			<div class="a">F.A.Q</div>
+			<h6></h6>
+			<div class="title">Frequently Asked Questions</div>
+		</div>
+		<div class="accordion-body">
+			<div class="accordion">
+				<hr />
+				<div class="container-a">
+					<div class="label"> What is HTML?</div>
+					<div class="content">
+						Hypertext Markup Language (HTML) is a computer language that makes
+						up most web pages and online applications. A hypertext is a text
+						that is used to reference other pieces of text, while a markup
+						language is a series of markings that tells web servers the style
+						and structure of a document. HTML is very simple to learn and use.
+					</div>
+				</div>
+				<hr />
+				<div class="container-a">
+					<div class="label">What is PHP?</div>
+					<div class="content">
+						Hypertext Preprocessor a bit differrent then the convention, but
+						nonetheless old and Robust.
+					</div>
+				</div>
+				<hr />
+				<div class="container-a">
+					<div class="label">What is Java?</div>
+					<div class="content">
+						Java, developed by Sun Microsystems, Inc. in 1995. Later acquired by
+						Oracle in 2010.
+					</div>
+				</div>
+				<hr />
+				<div class="container-a">
+					<div class="label">What is Python?</div>
+					<div class="content">
+						Python the most popular language of them all. Python's creator Guido
+						Van Rossum created these language. He named our beloved language
+						after the shows main character Monty Python.
+					</div>
+				</div>
+				<hr />
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div>
+			<div class="a">Team</div>
+			<div class="title">Our Hardworking team</div>
+		</div>
+		<div class="flex6">
+			<div class="team">
+				<img style="width: 100%; border-radius: 5px;" src="team-1.jpg" alt="">
+				<div class="socials">
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="twitter.svg" alt="">
+					</div>
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="facebook.svg" alt="">
+					</div>
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="instagram.svg" alt="">
+					</div>
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="linkedin.svg" alt="">
+					</div>
+				</div>
+				<div class="mname">Walter White</div>
+				<div class="mjob">Cheif Executive Officer</div>
+			</div>
+			<div class="team">
+				<img style="width: 100%; border-radius: 5px;" src="team-2.jpg" alt="">
+				<div class="socials">
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="twitter.svg" alt="">
+					</div>
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="facebook.svg" alt="">
+					</div>
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="instagram.svg" alt="">
+					</div>
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="linkedin.svg" alt="">
+					</div>
+				</div>
+				<div class="mname">Sarah Jhonson</div>
+				<div class="mjob">Manager</div>
+			</div>
+			<div class="team">
+				<img style="width: 100%; border-radius: 5px;" src="team-3.jpg" alt="">
+				<div class="socials">
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="twitter.svg" alt="">
+					</div>
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="facebook.svg" alt="">
+					</div>
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="instagram.svg" alt="">
+					</div>
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="linkedin.svg" alt="">
+					</div>
+				</div>
+				<div class="mname">William Anderson</div>
+				<div class="mjob">CTO</div>
+			</div>
+			<div class="team">
+				<img style="width: 100%; border-radius: 5px;" src="team-4.jpg" alt="">
+				<div class="socials">
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="twitter.svg" alt="">
+					</div>
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="facebook.svg" alt="">
+					</div>
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="instagram.svg" alt="">
+					</div>
+					<div class="social-logo">
+						<img class="social-photo" width="100%" src="linkedin.svg" alt="">
+					</div>
+				</div>
+				<div class="mname">Amanda Jepson</div>
+				<div class="mjob">Accountant</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div>
+			<div class="a">Contact</div>
+			<div class="title">CONTACT US</div>
+		</div>
+		<div class="grid-container-contact">
+			<div class="side-info">
+				<div>
+					<div class="contact-info"> <i class="fa-solid fa-location-dot" style="color: #fc4c0e;"></i>
+						<span class="loc">Location:</span>
+						<div style="font-size:xx-large;">
+							<i class="fa-solid fa-location-dot" style="visibility: hidden;"></i>
+							<span class="add">A
+								108 Adam
+								Street,New York,NY 535022</span>
+						</div>
+					</div>
+				</div>
+				<div class="contact-info"> <i class="fa-solid fa-location-dot" style="color: #fc4c0e;"></i> <span
+						class="loc">Email:</span>
+					<div style="font-size:xx-large;">
+						<i class="fa-solid fa-location-dot" style="visibility: hidden;"></i>
+						<span class="add">bhavinnor1@gmail.com</span>
+					</div>
+				</div>
+				<div class="contact-info"> <i class="fa-solid fa-location-dot" style="color: #fc4c0e;"></i> <span
+						class="loc">Call:</span>
+					<div style="font-size:xx-large;">
+						<i class="fa-solid fa-location-dot" style="visibility: hidden;"></i>
+						<span class="add">+1 5589 55488
+							55</span>
+					</div>
+				</div>
+			</div>
+			<div style="display: inline-block;">
+				<form class="form" action="">
+					<input type="text" placeholder="Your Name">
+					<input type="text" placeholder="Your Email">
+					<input type="text" placeholder="Subject" style="grid-column: 1 / 3;">
+					<textarea name="" id="" cols="30" rows="3" placeholder="Enter Your Message"
+						style="grid-column: 1 / 3;"></textarea>
+					<div style="grid-column: 1 / 3; justify-self: center;"><input id="send-message" type="submit"
+							value="Send Message">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="container full-bleed2">
+		<div class="footer">
+			<div class="title">Selecao</div>
+			<div>
+				Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi
+				placeat.
+			</div>
+			<div class="socials">
+				<div class="social-logo">
+					<img class="social-photo" width="100%" src="twitter.svg" alt="">
+				</div>
+				<div class="social-logo">
+					<img class="social-photo" width="100%" src="facebook.svg" alt="">
+				</div>
+				<div class="social-logo">
+					<img class="social-photo" width="100%" src="instagram.svg" alt="">
+				</div>
+				<div class="social-logo">
+					<img class="social-photo" width="100%" src="linkedin.svg" alt="">
+				</div>
+			</div>
+			<div>
+				© Copyright Selecao. All Right Reserved
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script>
+		const accordion = document.getElementsByClassName("container-a");
+		for (i = 0; i < accordion.length; i++) {
+			accordion[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+			});
+		}
+		// For Navbar Color Change OnScroll 
+		// $(document).ready(function () {
+		//     $(window).scroll(function () {
+		//         if ($(document).scrollTop() > 50) {
+		//             $(".ncontainer").css("background-color", "rgba(42, 44, 57, 0.9)");
+		//         } else {
+		//             $(".ncontainer").css("background", "transparent");
+		//         }
+		//     });
+		// });
+
+		// const iph = document.getElementById('info-para').clientHeight;
+		// console.log("info-para: " + iph);
+		// document.getElementById('explain-image').style = "display: block;";
+		// document.getElementById('explain-image').style = "height: " + iph + "px;";
+		// console.log(document.getElementById('explain-image').clientHeight);
+		// let element = document.getElementById('min-div');
+		// let element2 = document.getElementById('n-div');
+		let nav = document.getElementById('nav');
+		// $(function () {
+		// 	$(document).scroll(function () {
+		// 		var $nav = $(".navbar");
+		// 		$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+		// 	});
+		// });
+		const header = ["Welcome To Selecao", "Sequi ea ut et est quaerat", "Lorem Ipsum Dolor"]
+		const para = ["Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto. "]
+		var count = 0;
+		function arrow2() {
+			console.log(count);
+			if (count===0){
+				count=3;
+			}
+			count=count-1;
+			// document.getElementById("header").style = "";
+			document.getElementById("header").innerText = header[count];
+			document.getElementById("para").innerText = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero";
+			// alert("clicked!");
+		}
+		function arrow() {
+			console.log(count);
+			if (count>=2){
+				count=-1;
+			}
+			count++;
+			// document.getElementById("header").style = "";
+			document.getElementById("header").innerText = header[count];
+			document.getElementById("para").innerText = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero";
+			// alert("clicked!");
+		}
+		function haambagu() {
+			console.log(document.getElementById("nav").style.height);
+			if (document.getElementById("nav").style.height == "60px") {
+				nav.style.height = "100%";
+			}
+			else {
+				nav.style.height = "60px";
+			}
+			// if (document.getElementById("dd").style.display == "block") {
+			// 	element.classList.remove("navbar");
+			// 	element2.classList.add('navbar');
+			// 	document.getElementById("dd").style.display = "none";
+			// 	let n = document.getElementsByClassName("nav-li");
+			// 	for (let i = 0; i < n.length; i++) {
+			// 		n[i].style.display = "inline-block";
+			// 	}
+			// }
+			// else {
+			// 	element.classList.add("navbar");
+			// 	element2.classList.remove('navbar');
+			// 	document.getElementById("dd").style.display = "block";
+			// 	let n = document.getElementsByClassName("nav-li");
+			// 	for (let i = 0; i < n.length; i++) {
+			// 		n[i].style.display = "block";
+			// 	}
+			// }
+		}
+		const title = ["Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.", "Neque exercitationem debitis soluta quos debitis quo mollitia officia est", "Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda", "Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore rerum"];
+		const big = "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
+		const small = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+		const ul = '<img style="width: 1em;" src="dtick.svg" alt=""> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <br><img style="width: 1em;" src="dtick.svg" alt=""> Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non<br><img style="width: 1em;" src="dtick.svg" alt=""> Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>';
+		function blogger() {
+			let a = document.getElementsByClassName("b");
+			for (let i = 0; i < a.length; i++) {
+				a[i].style.background = "white";
+			}
+			document.getElementById("blogger").style.background = "coral";
+			document.getElementById("cli").style.fill = "black";
+			document.getElementById("woi").style.fill = "black";
+			document.getElementById("wii").style.fill = "black";
+			document.getElementById("bli").style.fill = "white";
+			document.getElementById("b-title").innerHTML = title[0];
+			document.getElementById("b-fpara").innerHTML = small;
+			document.getElementById("b-spara").innerHTML = ul;
+			document.getElementById("b-tpara").innerHTML = big;
+			document.getElementById("explain-image").src = "https://bootstrapselecaobykj.netlify.app/Image/Features/features-1.png";
+		}
+		function wix() {
+			let a = document.getElementsByClassName("b");
+			for (let i = 0; i < a.length; i++) {
+				a[i].style.background = "white";
+			}
+			document.getElementById("wix").style.background = "coral";
+			document.getElementById("cli").style.fill = "black";
+			document.getElementById("woi").style.fill = "black";
+			document.getElementById("bli").style.fill = "black";
+			document.getElementById("wii").style.fill = "white";
+			document.getElementById("b-title").innerHTML = title[1];
+			document.getElementById("b-fpara").innerHTML = big;
+			document.getElementById("b-spara").innerHTML = small;
+			document.getElementById("b-tpara").innerHTML = ul;
+			document.getElementById("explain-image").src = "https://bootstrapselecaobykj.netlify.app/Image/Features/features-2.png";
+		}
+		function wordpress() {
+			let a = document.getElementsByClassName("b");
+			for (let i = 0; i < a.length; i++) {
+				a[i].style.background = "white";
+			}
+			document.getElementById("wordpress").style.background = "coral";
+			document.getElementById("cli").style.fill = "black";
+			document.getElementById("wii").style.fill = "black";
+			document.getElementById("bli").style.fill = "black";
+			document.getElementById("woi").style.fill = "white";
+			document.getElementById("b-title").innerHTML = title[2];
+			document.getElementById("b-fpara").innerHTML = big;
+			document.getElementById("b-spara").innerHTML = ul;
+			document.getElementById("b-tpara").innerHTML = small;
+			document.getElementById("explain-image").src = "https://bootstrapselecaobykj.netlify.app/Image/Features/features-3.png";
+		}
+		function cloudflare() {
+			let a = document.getElementsByClassName("b");
+			for (let i = 0; i < a.length; i++) {
+				a[i].style.background = "white";
+			}
+			document.getElementById("cloudflare").style.background = "coral";
+			document.getElementById("woi").style.fill = "black";
+			document.getElementById("wii").style.fill = "black";
+			document.getElementById("bli").style.fill = "black";
+			document.getElementById("cli").style.fill = "white";
+			console.log(document.getElementById("cli").style.fill);
+			document.getElementById("b-title").innerHTML = title[3];
+			document.getElementById("b-fpara").innerHTML = big;
+			document.getElementById("b-spara").innerHTML = small;
+			document.getElementById("b-tpara").innerHTML = ul;
+			document.getElementById("explain-image").src = "https://bootstrapselecaobykj.netlify.app/Image/Features/features-4.png";
+		}
+	</script>
+	
+</body>
+
+</html>

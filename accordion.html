@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+    <link rel="stylesheet" href="style-accordion.css" />
+    <style>
+      .accordion {
+        width: 800px;
+        margin: 90px auto;
+        color: black;
+        background-color: white;
+        padding: 45px 45px;
+      }
+
+      .accordion .container-a {
+        position: relative;
+        margin: 10px 10px;
+      }
+      .accordion .label {
+        position: relative;
+        padding: 10px 0;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+      }
+      .accordion .label::before {
+        content: "+";
+        color: black;
+        position: absolute;
+        top: 50%;
+        right: -5px;
+        font-size: 30px;
+        transform: translateY(-50%);
+      }
+      .accordion .content {
+        position: relative;
+        background: white;
+        height: 0;
+        font-size: 20px;
+        text-align: justify;
+        width: 780px;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+      .accordion hr {
+        width: 100;
+        margin-left: 0;
+        border: 1px solid grey;
+      }
+      .accordion .container-a.active .content {
+        height: 150px;
+      }
+      .accordion .container-a.active .label::before {
+        content: "-";
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion-body">
+      <div class="accordion">
+        <h1>Frequently Asked Questions</h1>
+        <hr />
+        <div class="container-a">
+          <div class="label">What is HTML?</div>
+          <div class="content">
+            Hypertext Markup Language (HTML) is a computer language that makes
+            up most web pages and online applications. A hypertext is a text
+            that is used to reference other pieces of text, while a markup
+            language is a series of markings that tells web servers the style
+            and structure of a document. HTML is very simple to learn and use.
+          </div>
+        </div>
+        <hr />
+        <div class="container-a">
+          <div class="label">What is PHP?</div>
+          <div class="content">
+            Hypertext Preprocessor a bit differrent then the convention, but
+            nonetheless old and Robust.
+          </div>
+        </div>
+        <hr />
+        <div class="container-a">
+          <div class="label">What is Java?</div>
+          <div class="content">
+            Java, developed by Sun Microsystems, Inc. in 1995. Later acquired by
+            Oracle in 2010.
+          </div>
+        </div>
+        <hr />
+        <div class="container-a">
+          <div class="label">What is Python?</div>
+          <div class="content">
+            Python the most popular language of them all. Python's creator Guido
+            Van Rossum created these language. He named our beloved language
+            after the shows main character Monty Python.
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <script>
+      const accordion = document.getElementsByClassName("container-a");
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>
